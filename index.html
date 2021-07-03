@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>수도권 지하철 노선도</h1>
+    <svg height = "10000" width="10000">
+        <!--3호선-->
+        <line fill = "none" stroke= " #F36630" stroke-width = "3" stroke-miterlimit = "10" x1 = "250" y1 = "350" x2 = "1100" y2 = "350"></line>
+        <line fill = "none" stroke= " #F36630" stroke-width = "2" stroke-miterlimit = "10" x1 = "750" y1 = "350" x2 = "725" y2 = "325"></line>
+        <line fill = "none" stroke= " #F36630" stroke-width = "2" stroke-miterlimit = "10" x1 = "700" y1 = "350" x2 = "725" y2 = "325"></line>
+        <!--6호선-->
+        <line fill = "none" stroke = "#9E4510" stroke-width = "3" stroke-miterlimit = "10" x1 = "900" y1 = "300" x2 = "950" y2 = "350"></line>
+        <line fill = "none" stroke = "#9E4510" stroke-width = "3" stroke-miterlimit = "10" x1 = "900" y1 = "300" x2 = "850" y2 = "350"></line>
+        <line fill = "none" stroke = "#9E4510" stroke-width = "3" stroke-miterlimit = "10" x1 = "850" y1 = "350" x2 = "900" y2 = "400"></line>
+        <line fill = "none" stroke = "#9E4510" stroke-width = "3" stroke-miterlimit = "10" x1 = "850" y1 = "450" x2 = "950" y2 = "350"></line>
+        <!--경의중앙선-->
+        <line fill = "none" stroke= " #71C5A6" stroke-width = "3" stroke-miterlimit = "10" x1 = "100" y1 = "100" x2 = "100" y2 = "150"></line>
+        <line fill = "none" stroke = "#71C5A6" stroke-width = "2" stroke-miterlimit = "10" x1 = "125" y1 = "175" x2 = "100" y2 = "150"></line>
+        <line fill = "none" stroke = "#71C5A6" stroke-width = "3" stroke-miterlimit = "10" x1 = "100" y1 = "150" x2 = "500" y2 = "150"></line>
+        <line fill = "none" stroke = "#71C5A6" stroke-width = "3" stroke-miterlimit = "10" x1 = "500" y1 = "150" x2 = "500" y2 = "400"></line>
+
+        <!--3호선-->
+        <circle onclick = "callStation(this.id)" id = "309" cx = "250" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "238.5" y = "335" font-size = "12">대화</text>
+        <circle onclick = "callStation(this.id)" id = "310" cx = "300" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "288.5" y = "335" font-size = "12">주엽</text>
+        <circle onclick = "callStation(this.id)" id = "311" cx = "350" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "332" y = "335" font-size = "12">정발산</text>
+        <circle onclick = "callStation(this.id)" id = "312" cx = "400" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "388.5" y = "335" font-size = "12">마두</text>
+        <circle onclick = "callStation(this.id)" id = "313" cx = "450" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "438.5" y = "335" font-size = "12">백석</text>
+        <circle onclick = "callStation(this.id)" id = "315" cx = "550" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "538.5" y = "335" font-size = "12">화정</text>
+        <circle onclick = "callStation(this.id)" id = "316" cx = "600" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "588.5" y = "335" font-size = "12">원당</text>
+        <circle onclick = "callStation(this.id)" id = "317" cx = "650" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "638.5" y = "335" font-size = "12">원흥</text>
+        <circle onclick = "callStation(this.id)" id = "318" cx = "700" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "688.5" y = "335" font-size = "12">삼송</text>
+        <circle onclick = "callStation(this.id)" id = "319" cx = "750" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "721" y = "318" font-size = "10">지축기지</text>
+        <rect onclick = "callStation(this.id)" id = "JichukBase" x = "721" y = "320" fill = "#FFFFFF" stroke = "#F36630" stroke-miterlimit = "10" width = "8" height = "8"/>
+        <text x = "738.5" y = "335" font-size = "12">지축</text>
+        <circle onclick = "callStation(this.id)" id = "320" cx = "800" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "782" y = "335" font-size = "12">구파발</text>
+        <circle onclick = "callStation(this.id)" id = "321/614" cx = "850" cy = "350" r = "7" stroke = "black" stroke-width = "1" fill = "white"/>
+        <text x = "832" y = "335" font-size = "12">연신내</text>
+        <circle onclick = "callStation(this.id)" id = "322/612" cx = "950" cy = "350" r = "7" stroke = "black" stroke-width = "1" fill = "white"/>
+        <text x = "938.5" y = "335" font-size = "12">불광</text>
+        <circle onclick = "callStation(this.id)" id = "323" cx = "1000" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "988.5" y = "335" font-size = "12">녹번</text>
+        <circle onclick = "callStation(this.id)" id = "324" cx = "1050" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "1038.5" y = "335" font-size = "12">홍제</text>
+        <circle onclick = "callStation(this.id)" id = "325" cx = "1100" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
+        <text x = "1082" y = "335" font-size = "12">무악재</text>
+        <!--6호선-->
+        <circle onclick = "callStation(this.id)" id = "322/612" cx = "900" cy = "300" r = "6" stroke = "#9E4510" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "400" font-size = "12">독바위</text>
+        <circle onclick = "callStation(this.id)" id = "610" cx = "900" cy = "400" r = "6" stroke = "#9E4510" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "400" font-size = "12">응암</text>
+        <!--경의중앙선-->
+        <circle onclick = "callStation(this.id)" id = "K336" cx = "100" cy = "100" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "50" y = "100" font-size = "12">임진강</text>
+        <rect onclick = "callStation(this.id)" id = "MunsanBase" x = "125" y = "175" fill = "#FFFFFF" stroke = "#71C5A6" stroke-miterlimit = "10" width = "8" height = "8"/>
+        <text x = "140" y = "180" font-size = "10">문산기지</text>
+        <circle onclick = "callStation(this.id)" id = "K335" cx = "100" cy = "150" r = "7" stroke = "black" stroke-width = "1" fill = "white"/>
+        <text x = "50" y = "150" font-size = "12">문산</text>
+        <circle onclick = "callStation(this.id)" id = "K334" cx = "150" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "138.5" y = "135" font-size = "12">파주</text>
+        <circle onclick = "callStation(this.id)" id = "K332" cx = "200" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "188.5" y = "135" font-size = "12">월롱</text>
+        <circle onclick = "callStation(this.id)" id = "K331" cx = "250" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "238.5" y = "135" font-size = "12">금촌</text>
+        <circle onclick = "callStation(this.id)" id = "K330" cx = "300" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "288.5" y = "135" font-size = "12">금릉</text>
+        <circle onclick = "callStation(this.id)" id = "K329" cx = "350" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "338.5" y = "135" font-size = "12">운정</text>
+        <circle onclick = "callStation(this.id)" id = "K328" cx = "400" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "388.5" y = "135" font-size = "12">야당</text>
+        <circle onclick = "callStation(this.id)" id = "K327" cx = "450" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "438.5" y = "135" font-size = "12">탄현</text>
+        <circle onclick = "callStation(this.id)" id = "K326" cx = "500" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "488.5" y = "135" font-size = "12">일산</text>
+        <circle onclick = "callStation(this.id)" id = "K325" cx = "500" cy = "200" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "465" y = "204.5" font-size = "12">풍산</text>
+        <circle onclick = "callStation(this.id)" id = "K324" cx = "500" cy = "250" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "465" y = "254.5" font-size = "12">백마</text>
+        <circle onclick = "callStation(this.id)" id = "K323" cx = "500" cy = "300" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "465" y = "304.5" font-size = "12">곡산</text>
+        <circle onclick = "callStation(this.id)" id = "314/K322" cx = "500" cy = "350" r = "7" stroke = "black" stroke-width = "1" fill = "white"/>
+        <text x = "505" y = "370" font-size = "12">대곡</text>
+        <circle onclick = "callStation(this.id)" id = "K321" cx = "500" cy = "400" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <text x = "465" y = "404.5" font-size = "12">능곡</text>
+        <circle onclick = "callStation(this.id)" id = "K320" cx = "500" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <circle onclick = "callStation(this.id)" id = "K319" cx = "500" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <circle onclick = "callStation(this.id)" id = "K318" cx = "500" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <circle onclick = "callStation(this.id)" id = "K317" cx = "500" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <circle onclick = "callStation(this.id)" id = "K316" cx = "500" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+        <circle onclick = "callStation(this.id)" id = "K315" cx = "500" cy = "150" r = "6" stroke = "#71C5A6" stroke-width = "1" fill = "white"/>
+    </svg>
+    <script>
+        function callStation(id){
+            console.log(id)
+        }
+    </script>
+</body>
+</html>
