@@ -10,12 +10,13 @@
     <h1>수도권 지하철 노선도</h1>
     <svg height = "10000" width="10000">
         <!--2호션-->
-        <line fill = "none" stroke= " #009246" stroke-width = "3" stroke-miterlimit = "10" x1 = "550" y1 = "975" x2 = "625" y2 = "900"></line>
+        <line fill = "none" stroke= " #009246" stroke-width = "3" stroke-miterlimit = "10" x1 = "500" y1 = "1025" x2 = "625" y2 = "900"></line>
 
         <!--3호선-->
         <line fill = "none" stroke= " #F36630" stroke-width = "3" stroke-miterlimit = "10" x1 = "250" y1 = "350" x2 = "1100" y2 = "350"></line>
         <line fill = "none" stroke= " #F36630" stroke-width = "2" stroke-miterlimit = "10" x1 = "750" y1 = "350" x2 = "725" y2 = "325"></line>
         <line fill = "none" stroke= " #F36630" stroke-width = "2" stroke-miterlimit = "10" x1 = "700" y1 = "350" x2 = "725" y2 = "325"></line>
+        <!--5호선-->
         <!--6호선-->
         <line fill = "none" stroke = "#9E4510" stroke-width = "3" stroke-miterlimit = "10" x1 = "900" y1 = "300" x2 = "950" y2 = "350"></line>
         <line fill = "none" stroke = "#9E4510" stroke-width = "3" stroke-miterlimit = "10" x1 = "900" y1 = "300" x2 = "850" y2 = "350"></line>
@@ -25,6 +26,13 @@
         <line fill = "none" stroke = "#9E4510" stroke-width = "3" stroke-miterlimit = "10" x1 = "650" y1 = "700" x2 = "950" y2 = "400"></line>
         <line fill = "none" stroke = "#9E4510" stroke-width = "3" stroke-miterlimit = "10" x1 = "650" y1 = "700" x2 = "550" y2 = "700"></line>
         <line fill = "none" stroke = "#9E4510" stroke-width = "3" stroke-miterlimit = "10" x1 = "550" y1 = "700" x2 = "550" y2 = "975"></line>
+        <!--9호선-->
+        <line fill = "none" stroke = "#BDB092" stroke-width = "3" stroke-miterlimit = "10" x1 = "350" y1 = "700" x2 = "300" y2 = "700"></line>
+        <line fill = "none" stroke = "#BDB092" stroke-width = "3" stroke-miterlimit = "10" x1 = "450" y1 = "700" x2 = "450" y2 = "975"></line>
+        <line fill = "none" stroke = "#BDB092" stroke-width = "3" stroke-miterlimit = "10" x1 = "375" y1 = "675" x2 = "350" y2 = "700"></line>
+        <line fill = "none" stroke = "#BDB092" stroke-width = "3" stroke-miterlimit = "10" x1 = "450" y1 = "700" x2 = "425" y2 = "675"></line>
+        <line fill = "none" stroke = "#BDB092" stroke-width = "3" stroke-miterlimit = "10" x1 = "425" y1 = "675" x2 = "375" y2 = "675"></line>
+        <line fill = "none" stroke = "#BDB092" stroke-width = "3" stroke-miterlimit = "10" x1 = "500" y1 = "1025" x2 = "450" y2 = "975"></line>
         <!--경의중앙선-->
         <line fill = "none" stroke= " #71C5A6" stroke-width = "3" stroke-miterlimit = "10" x1 = "100" y1 = "50" x2 = "150" y2 = "50"></line>
         <line fill = "none" stroke= " #71C5A6" stroke-width = "3" stroke-miterlimit = "10" x1 = "100" y1 = "50" x2 = "100" y2 = "150"></line>
@@ -44,6 +52,8 @@
         <line fill = "none" stroke = "#A17800" stroke-width = "2" stroke-miterlimit = "10" x1 = "75" y1 = "500" x2 = "50" y2 = "500"></line>
 
         <!--2호선-->
+        <circle onclick = "callStation(this.id)" id = "237/913" cx = "500" cy = "1025" r = "7" stroke = "black" stroke-width = "1" fill = "white"/>
+        <text x = "565" y = "779.5" font-size = "12">당산</text>
         <circle onclick = "callStation(this.id)" id = "238/622" cx = "550" cy = "975" r = "7" stroke = "black" stroke-width = "1" fill = "white"/>
         <text x = "565" y = "779.5" font-size = "12">합정</text>
         <!--3호선-->
@@ -81,6 +91,17 @@
         <text x = "1038.5" y = "335" font-size = "12">홍제</text>
         <circle onclick = "callStation(this.id)" id = "325" cx = "1100" cy = "350" r = "6" stroke = "#F36630" stroke-width = "1" fill = "white"/>
         <text x = "1082" y = "335" font-size = "12">무악재</text>
+        <!--5호선-->
+        <circle onclick = "callStation(this.id)" id = "610" cx = "350" cy = "750" r = "6" stroke = "#A064A3" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">송정</text>
+        <circle onclick = "callStation(this.id)" id = "610" cx = "350" cy = "800" r = "6" stroke = "#A064A3" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">마곡</text>
+        <circle onclick = "callStation(this.id)" id = "610" cx = "350" cy = "850" r = "6" stroke = "#A064A3" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">발산</text>
+        <circle onclick = "callStation(this.id)" id = "610" cx = "350" cy = "900" r = "6" stroke = "#A064A3" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">우장산</text>
+        <circle onclick = "callStation(this.id)" id = "610" cx = "350" cy = "950" r = "6" stroke = "#A064A3" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">화곡</text>
         <!--6호선-->
         <circle onclick = "callStation(this.id)" id = "610" cx = "900" cy = "450" r = "6" stroke = "#9E4510" stroke-width = "1" fill = "white"/>
         <text x = "888.5" y = "430" font-size = "12">응암</text>
@@ -100,6 +121,27 @@
         <text x = "787.5" y = "580" font-size = "12">마포구청</text>
         <circle onclick = "callStation(this.id)" id = "621" cx = "550" cy = "900" r = "6" stroke = "#9E4510" stroke-width = "1" fill = "white"/>
         <text x = "787.5" y = "580" font-size = "12">망원</text>
+        <!--9호선-->
+        <circle onclick = "callStation(this.id)" id = "901" cx = "300" cy = "700" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">개화</text>
+        <circle onclick = "callStation(this.id)" id = "903" cx = "375" cy = "675" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">공항시장</text>
+        <circle onclick = "callStation(this.id)" id = "904" cx = "425" cy = "675" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">신방화</text>
+        <circle onclick = "callStation(this.id)" id = "906" cx = "450" cy = "750" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">양천향교</text>
+        <circle onclick = "callStation(this.id)" id = "907" cx = "450" cy = "787.5" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">가양</text>
+        <circle onclick = "callStation(this.id)" id = "908" cx = "450" cy = "825" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">증미</text>
+        <circle onclick = "callStation(this.id)" id = "909" cx = "450" cy = "862.5" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">등촌</text>
+        <circle onclick = "callStation(this.id)" id = "910" cx = "450" cy = "900" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">염창</text>
+        <circle onclick = "callStation(this.id)" id = "911" cx = "450" cy = "937.5" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">신목동</text>
+        <circle onclick = "callStation(this.id)" id = "912" cx = "450" cy = "975" r = "6" stroke = "#BDB092" stroke-width = "1" fill = "white"/>
+        <text x = "888.5" y = "430" font-size = "12">선유도</text>
         <!--경의중앙선-->
         <circle onclick = "callStation(this.id)" id = "K336" cx = "150" cy = "50" r = "5" stroke = "gray" stroke-width = "1" fill = "white"/>
         <text x = "160" y = "54" font-size = "12">도라산</text>
